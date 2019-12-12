@@ -1,0 +1,16 @@
+.custom-switch .custom-control-label::before {
+    height: 1.35rem;
+}
+.custom-switch .custom-control-label::before {
+    width: 2.5rem;
+    border-radius: 0.7rem;
+}
+
+.custom-switch .custom-control-label::after {
+    width: calc(1.25rem - 4px);
+    height: calc(1.35rem - 4px);
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    -webkit-transform: translateX(1.25rem);
+    transform: translateX(1.25rem);
+}

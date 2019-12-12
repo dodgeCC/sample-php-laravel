@@ -1,0 +1,107 @@
+.job-card { @extend .card, .shadow, .mb-4;
+    
+    header { @extend .card-body; 
+
+        p { @extend .text-muted, .mt-3, .mb-2; }
+
+        h5 { 
+            font-size: 1.125rem;
+            min-height: 2.625rem;
+            @extend .card-title, .font-weight-bold, .mb-0; 
+        }
+
+    }
+
+    footer { @extend .card-footer, .border-0, .pt-0; 
+
+        ul { @extend .list-unstyled;
+
+            li { @extend .mb-2; 
+
+                i { 
+                    font-size: 20px;
+                    @extend .text-primary, .mr-2, .align-text-top; 
+                }
+
+                span { @extend .text-muted, .font-weight-bold; }
+
+            }
+
+        }
+
+        a:not(.no-stretch) { @extend .stretched-link, .text-body, .text-decoration-none, .font-weight-bold; 
+
+            i { @extend .text-primary, .mr-2, .align-bottom; }
+
+        }
+
+    }
+
+}
+
+.job-card-row { 
+
+    section {
+        @extend .row, .align-items-center, .mr-0, .ml-0;
+    
+        header { @extend .card-body, .col-10, .pr-0; 
+
+            h5 { 
+                min-height: inherit;
+                @extend .mt-3, .mb-2;
+            }
+
+            ul { @extend .list-inline, .mb-0;
+
+                li { @extend .list-inline-item, .mb-0, .mr-4; 
+
+                    i { 
+                        font-size: 20px;
+                        @extend .text-primary, .mr-2, .align-text-top; 
+                    }
+
+                    span { @extend .text-muted, .font-weight-bold; }
+
+                }
+
+            }
+
+        }
+
+        footer { @extend .card-footer, .col-2, .pl-0, .pt-4, .position-relative;
+            
+            a { @extend .text-body, .text-decoration-none, .font-weight-bold, .mb-3, .d-block; 
+
+                i { @extend .text-primary, .mr-2, .align-bottom; }
+
+            }
+
+            small + small a {
+                @extend .text-primary, .font-weight-bold, .mb-0;
+            }
+
+        }
+    }
+}
+
+.pricing-card {
+    
+    @extend .card, .shadow, .p-3;
+    
+    .card-body {
+
+        @extend .text-center;
+
+        .card-title {
+         
+            @extend .font-weight-bold;
+
+        }
+
+        .list-check {
+
+            @extend .list-unstyled;
+
+        }
+    }
+}

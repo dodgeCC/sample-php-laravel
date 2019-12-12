@@ -1,0 +1,32 @@
+.job-view {
+
+    @extend .container, .py-7;
+
+    > div:first-child {
+
+        @extend .row, .mb-5;
+
+        > div:first-child {
+
+            @extend .col-12, .col-lg-2;
+
+            + div {
+
+                @extend .col-md-8;
+                
+            }
+
+            > div {
+
+                @extend .card, .shadow, .rounded, .py-3;
+
+                > div {
+
+                    @extend .card-body, .text-center, .py-5;
+
+                }
+            }
+        }
+    }
+
+}

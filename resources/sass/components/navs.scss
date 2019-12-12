@@ -1,0 +1,9 @@
+.navbar-spark {
+    .navbar-nav {
+        .nav-item {
+            .nav-link, .dropdown-item {
+                @extend .text-uppercase;
+            }
+        }
+    }
+}
